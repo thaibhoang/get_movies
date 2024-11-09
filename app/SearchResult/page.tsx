@@ -38,6 +38,7 @@ const SearchResult = ({ movies, loading, error }: SearchResultProps) => {
       {movies.map((movie) => (
         <MovieBox
           key={movie.id}
+          id={movie.id}
           title={movie.title}
           posterPath={movie.poster_path}
           releaseDate={movie.release_date}
